@@ -1,0 +1,23 @@
+import type { Metadata } from "next";
+import "@/styles/globals.css";
+
+export const metadata: Metadata = {
+  title: "The Soho Farms | Premium Hilltop Agricultural Land",
+  description:
+    "100 acre premium gated community agricultural land in the Roha-Alibaug region with mountain views, infrastructure, and helicopter site visit experience."
+};
+
+export default function RootLayout({
+  children
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <head>
+        <link rel="icon" href="/logo_shoho.png" />
+      </head>
+      <body>{children}</body>
+    </html>
+  );
+}
